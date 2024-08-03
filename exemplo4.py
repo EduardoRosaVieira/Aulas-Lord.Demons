@@ -1,4 +1,4 @@
-altura =float (input('digite a altura: '))
+altura = float(input('digite a altura: '))
 sexo = input('digite o sexo: ')
 if (sexo.upper() == 'M'): # lower
     pesoideal = (72.7*altura)-58
