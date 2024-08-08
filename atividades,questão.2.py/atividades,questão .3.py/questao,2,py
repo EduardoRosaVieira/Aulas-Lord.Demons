@@ -1,0 +1,38 @@
+def calcular_faturamento(Q, P):
+    faturamento_total = 0
+    for i in range(len(Q)):
+        faturamento_total += Q[i] * P[i]
+    return faturamento_total
+def main():
+    print("Digite a quantidade vendida de cada mercadoria (10 mercadorias):")
+    
+num_mercadorias = 10
+
+Q = []
+
+P = []
+
+for i in range(num_mercadorias):
+
+    quantidade = int(input(f"Mercadoria {i}: "))
+
+Q.append(quantidade)
+
+print("Digite o preço de venda de cada mercadoria (10 mercadorias):")
+
+for i in range(num_mercadorias):
+
+    preco = float(input(f"Mercadoria {i}: "))
+P.append(preco)
+
+faturamento = calcular_faturamento(Q, P)
+
+print(f"O faturamento mensal do armazém é: R$ {faturamento:.2f}")
+
+if __name__ == "__main__":
+    main()
+
+
+
+
+    
